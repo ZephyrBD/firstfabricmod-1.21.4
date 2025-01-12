@@ -2,7 +2,6 @@ package zbd.firstfabricmod.item;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -44,6 +43,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GA_WALL);
                         entries.add(ModBlocks.GA_DOOR);
                         entries.add(ModBlocks.GA_TRAPDOOR);
+
+                        entries.add(ModItems.GA_SWORD);
+                        entries.add(ModItems.GA_PICKAXE);
+                        entries.add(ModItems.GA_AXE);
+                        entries.add(ModItems.GA_HOE);
+                        entries.add(ModItems.GA_SHOVEL);
                     }).build());
     public static void initialize()
     {

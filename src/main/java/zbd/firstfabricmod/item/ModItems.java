@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -33,7 +31,17 @@ public class ModItems {
             .useRemainder(BOWL));
     public static final Item PROSPECTOR = register("prospector", Prospector::new, new Item.Settings().maxDamage(127));
     public static final Item PLATE = register("plate", Item::new, new Item.Settings());
+    //GA_SWORD在这用作展示防火（下界合金）写法
+    public static final Item GA_SWORD = register("ga_sword", settings -> new SwordItem(ModToolMaterial.GALLIUM, 3.0F, -2.0F, new Item.Settings().fireproof()));
+    public static final Item GA_PICKAXE = register("ga_pickaxe", settings -> new PickaxeItem(ModToolMaterial.GALLIUM, 1.5F, -2.8F, settings));
+    public static final Item GA_SHOVEL = register("ga_shovel", settings -> new ShovelItem(ModToolMaterial.GALLIUM, 1.5F, -3.0F, settings));
+    public static final Item GA_AXE = register("ga_axe", settings -> new AxeItem(ModToolMaterial.GALLIUM, 6.0F, -3.2F, settings));
+    public static final Item GA_HOE = register("ga_hoe", settings -> new HoeItem(ModToolMaterial.GALLIUM, -4.0F, 0.0F, settings));
 
+    public static Item register(String name, Function<Item.Settings, Item> factory) {
+        final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FirstFabricMod.MOD_ID, name));
+        return Items.register(registryKey, factory, new Item.Settings());
+    }
 
     public static Item register(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {//注册item
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FirstFabricMod.MOD_ID, name));

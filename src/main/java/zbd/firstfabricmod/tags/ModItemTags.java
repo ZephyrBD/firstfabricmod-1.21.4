@@ -8,6 +8,7 @@ import zbd.firstfabricmod.FirstFabricMod;
 
 public class ModItemTags {
     public static final TagKey<Item> IRON_TAG = of("iron_tag");
+    public static final TagKey<Item> GALLIUM_TAG = of("gallium_tag");
     private static TagKey<Item> of(String id) {
         return TagKey.of(RegistryKeys.ITEM, Identifier.of(FirstFabricMod.MOD_ID,id));
     }

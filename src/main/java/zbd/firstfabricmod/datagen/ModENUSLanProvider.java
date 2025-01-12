@@ -5,8 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import zbd.firstfabricmod.blocks.ModBlocks;
 import zbd.firstfabricmod.item.ModItems;
-import zbd.firstfabricmod.tags.ModBlockTags;
-import zbd.firstfabricmod.tags.ModItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -43,6 +41,12 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.GA_WALL, "Gallium Wall");
         translationBuilder.add(ModBlocks.GA_DOOR, "Gallium Door");
         translationBuilder.add(ModBlocks.GA_TRAPDOOR, "Gallium Trapdoor");
+
+        translationBuilder.add(ModItems.GA_SWORD, "Gallium Sword");
+        translationBuilder.add(ModItems.GA_AXE, "Gallium Axe");
+        translationBuilder.add(ModItems.GA_HOE, "Gallium Hoe");
+        translationBuilder.add(ModItems.GA_PICKAXE, "Gallium Pickaxe");
+        translationBuilder.add(ModItems.GA_SHOVEL, "Gallium Shovel");
 
         translationBuilder.add("item.firstfabricmod.prospector.shift_tooltip","A tool to ores.");
         translationBuilder.add("item.firstfabricmod.prospector.tooltip","Hold \u00A76SHIFT\u00A7r for more information.");

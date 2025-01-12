@@ -2,9 +2,7 @@ package zbd.firstfabricmod.datagen;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
+import net.minecraft.client.data.*;
 import net.minecraft.data.family.BlockFamily;
 import zbd.firstfabricmod.blocks.ModBlockFamilies;
 import zbd.firstfabricmod.blocks.ModBlocks;
@@ -14,7 +12,6 @@ public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
         super(output);
     }
-
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         ModBlockFamilies.getFamilies()
@@ -37,5 +34,11 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_NINE_TURN_INTESTINES, Models.GENERATED);
         itemModelGenerator.registerWithInHandModel(ModItems.PLATE);
+
+        itemModelGenerator.registerWithInHandModel(ModItems.GA_SWORD);
+        itemModelGenerator.register(ModItems.GA_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GA_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GA_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GA_SHOVEL, Models.HANDHELD);
     }
 }

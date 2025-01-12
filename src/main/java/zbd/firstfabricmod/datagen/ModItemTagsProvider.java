@@ -18,6 +18,8 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider{
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ModItemTags.GALLIUM_TAG).add(ModItems.INGOT_GA);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.GA_SWORD);
         getOrCreateTagBuilder(ModItemTags.IRON_TAG)
                 .add(Items.IRON_INGOT)
                 .add(ModItems.INGOT_GA);
