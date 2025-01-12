@@ -1,6 +1,7 @@
 package zbd.firstfabricmod.blocks;
 
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -37,10 +38,14 @@ public class ModBlocks {
     public static final Block GA_WALL = register("ga_wall", WallBlock::new, AbstractBlock.Settings.copy(GA_BLOCK));
     public static final Block GA_DOOR = register("ga_door",
             settings -> new DoorBlock(BlockSetType.IRON, settings),
-            AbstractBlock.Settings.copy(GA_BLOCK));
+            AbstractBlock.Settings.copy(GA_BLOCK)
+                    .nonOpaque()
+                    .pistonBehavior(PistonBehavior.DESTROY));
     public static final Block GA_TRAPDOOR = register("ga_trapdoor",
             settings -> new TrapdoorBlock(BlockSetType.OAK, settings),
-            AbstractBlock.Settings.copy(GA_BLOCK));
+            AbstractBlock.Settings.copy(GA_BLOCK)
+                    .nonOpaque()
+                    .pistonBehavior(PistonBehavior.DESTROY));
 
     private static Block registerOldStairsBlock(String id, Block base) {
         return register(id, settings -> new StairsBlock(base.getDefaultState(), settings), AbstractBlock.Settings.copyShallow(base));

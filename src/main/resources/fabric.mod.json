@@ -8,9 +8,9 @@
 		"ZephyrBD"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/ZephyrBD/firstfabricmod-1.21.4"
 	},
-	"license": "MIT LICENSE",
+	"license": "GPL-2.0",
 	"icon": "assets/firstfabricmod/icon.png",
 	"environment": "*",
 	"entrypoints": {

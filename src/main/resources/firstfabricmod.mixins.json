@@ -3,7 +3,7 @@
 	"package": "zbd.firstfabricmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "ItemModelRenderMixin"
+      "RenderLayersMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
