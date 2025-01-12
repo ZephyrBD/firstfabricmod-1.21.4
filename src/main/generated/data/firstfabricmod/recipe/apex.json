@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": "#firstfabricmod:iron_tag"
+  },
+  "pattern": [
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstfabricmod:apex_legends"
+  }
+}

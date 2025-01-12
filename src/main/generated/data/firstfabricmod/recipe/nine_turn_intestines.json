@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:golden_carrot",
+    "M": "minecraft:bowl",
+    "X": "firstfabricmod:intestines",
+    "Y": "minecraft:golden_apple"
+  },
+  "pattern": [
+    " Y ",
+    "#X#",
+    " M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstfabricmod:nine_turn_intestines"
+  }
+}

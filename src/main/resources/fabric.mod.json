@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "firstfabricmod",
+	"version": "${version}",
+	"name": "FirstFabricMod",
+	"description": "This is my FirstMod! Hello World!!",
+	"authors": [
+		"ZephyrBD"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT LICENSE",
+	"icon": "assets/firstfabricmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"zbd.firstfabricmod.FirstFabricMod"
+		],
+		"fabric-datagen": [
+			"zbd.firstfabricmod.FirstFabricModDataGenerator"
+		],
+		"client": [
+			"zbd.firstfabricmod.FirstFabricModClient"
+		]
+	},
+	"mixins": [
+		"firstfabricmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

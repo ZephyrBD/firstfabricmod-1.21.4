@@ -1,0 +1,11 @@
+// 1.21.4	-999999999-01-01T00:00:00	FirstFabricMod/Tags for minecraft:block
+bbc30d93ae80516c96dce02091b288fe7a5f5223 data/c/tags/block/ores.json
+514873ef3902393595f7db4988cbe10a7bde5921 data/firstfabricmod/tags/block/ore_list.json
+140d8a6ae1aa912267967a348cc94e65ddfdfc38 data/minecraft/tags/block/beacon_base_blocks.json
+c681099ac755dfe6f1cb770de0190f344e6f9539 data/minecraft/tags/block/buttons.json
+7d86a316556e5c14fb42564f531072833f474f17 data/minecraft/tags/block/fence_gates.json
+2addf40a3dab2fdfd1b69c5e686845da12857158 data/minecraft/tags/block/fences.json
+ec9561cfe0a1f28afc46a005f8a29b568209e0f1 data/minecraft/tags/block/mineable/pickaxe.json
+753a0f0e1773b8ea5b384ca7bc3b1c3bf247acd3 data/minecraft/tags/block/needs_iron_tool.json
+0449e970bc0392a3c42a8aa6b629dbb8ecd286d1 data/minecraft/tags/block/needs_stone_tool.json
+c845a161484de46a232ee6ee0b34c1a22d043278 data/minecraft/tags/block/walls.json

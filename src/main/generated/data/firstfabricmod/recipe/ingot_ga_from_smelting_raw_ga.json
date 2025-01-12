@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ga_furnace",
+  "ingredient": "firstfabricmod:raw_ga",
+  "result": {
+    "id": "firstfabricmod:ingot_ga"
+  }
+}

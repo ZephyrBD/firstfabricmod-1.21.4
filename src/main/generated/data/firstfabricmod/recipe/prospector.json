@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:redstone",
+    "M": "minecraft:iron_block",
+    "X": "#c:glass_blocks",
+    "Y": "firstfabricmod:ingot_ga"
+  },
+  "pattern": [
+    "YYY",
+    "#X#",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "firstfabricmod:prospector"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "cooked_intestines_furnace",
+  "ingredient": "firstfabricmod:nine_turn_intestines",
+  "result": {
+    "id": "firstfabricmod:cooked_nine_turn_intestines"
+  }
+}

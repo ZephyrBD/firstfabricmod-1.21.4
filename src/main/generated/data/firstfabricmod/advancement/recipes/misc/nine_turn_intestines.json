@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_golden_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_golden_carrot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_carrot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_intestines": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstfabricmod:intestines"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "firstfabricmod:nine_turn_intestines"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_intestines",
+      "has_golden_carrot",
+      "has_golden_apple",
+      "has_bowl"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "firstfabricmod:nine_turn_intestines"
+    ]
+  }
+}

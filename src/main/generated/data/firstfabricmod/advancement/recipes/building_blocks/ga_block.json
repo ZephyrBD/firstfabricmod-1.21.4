@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ingot_ga": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstfabricmod:ingot_ga"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ga_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ingot_ga"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ga_block"
+    ]
+  }
+}

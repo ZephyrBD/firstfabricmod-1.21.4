@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nine_turn_intestines": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstfabricmod:nine_turn_intestines"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cooked_nine_turn_intestines_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nine_turn_intestines"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cooked_nine_turn_intestines_from_campfire_cooking"
+    ]
+  }
+}
