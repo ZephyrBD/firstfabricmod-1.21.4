@@ -27,10 +27,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public LootTable.Builder copperOreLikeDrops(Block drop,Item dropItem) {
         RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(drop,
-                (LootPoolEntry.Builder)this
-                        .applyExplosionDecay(drop, ItemEntry.builder(dropItem))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 5.0F)))
-                        .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE))));
+                this
+                .applyExplosionDecay(drop, ItemEntry.builder(dropItem))
+                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 5.0F)))
+                .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE))));
     }
 
     @Override

@@ -32,7 +32,8 @@ public class ModItems {
     public static final Item PROSPECTOR = register("prospector", Prospector::new, new Item.Settings().maxDamage(127));
     public static final Item PLATE = register("plate", Item::new, new Item.Settings());
     //GA_SWORD在这用作展示防火（下界合金）写法
-    public static final Item GA_SWORD = register("ga_sword", settings -> new SwordItem(ModToolMaterial.GALLIUM, 3.0F, -2.0F, new Item.Settings().fireproof()));
+    public static final Item GA_SWORD = register("ga_sword", settings -> new SwordItem(ModToolMaterial.GALLIUM, 3.0F, -2.0F, new Item.Settings().fireproof()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FirstFabricMod.MOD_ID, "ga_sword")))));
     public static final Item GA_PICKAXE = register("ga_pickaxe", settings -> new PickaxeItem(ModToolMaterial.GALLIUM, 1.5F, -2.8F, settings));
     public static final Item GA_SHOVEL = register("ga_shovel", settings -> new ShovelItem(ModToolMaterial.GALLIUM, 1.5F, -3.0F, settings));
     public static final Item GA_AXE = register("ga_axe", settings -> new AxeItem(ModToolMaterial.GALLIUM, 6.0F, -3.2F, settings));
