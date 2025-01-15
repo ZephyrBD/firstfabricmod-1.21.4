@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "firstfabricmod:item/gallium_sword"
+        },
+        "when": [
+          "gui"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "firstfabricmod:item/gallium_sword_in_hand"
+    },
+    "property": "minecraft:display_context"
+  }
+}

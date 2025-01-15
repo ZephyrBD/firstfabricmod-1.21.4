@@ -28,7 +28,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModRecipesProvider extends FabricRecipeProvider
 {
-    private static final List<ItemConvertible> GA_FURNACE = List.of(ModItems.RAW_GA);
+    private static final List<ItemConvertible> GA_FURNACE = List.of(ModItems.RAW_GALLIUM);
     public ModRecipesProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture)
     {
         super(output, registriesFuture);
@@ -43,20 +43,20 @@ public class ModRecipesProvider extends FabricRecipeProvider
             public void generate()
             {
                 //可逆配方
-                offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.INGOT_GA, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GA_BLOCK);
+                offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.GALLIUM_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GALLIUM_BLOCK);
                 //熔炉
-                offerSmelting(GA_FURNACE, RecipeCategory.MISC, ModItems.INGOT_GA, 0.7f, 200, "ga_furnace");
+                offerSmelting(GA_FURNACE, RecipeCategory.MISC, ModItems.GALLIUM_INGOT, 0.7f, 200, "ga_furnace");
                 offerSmelting(List.of(ModItems.NINE_TURN_INTESTINES), RecipeCategory.FOOD, ModItems.COOKED_NINE_TURN_INTESTINES, 0.7f, 200, "cooked_intestines_furnace");
                 //高炉
-                offerBlasting(GA_FURNACE, RecipeCategory.MISC, ModItems.INGOT_GA, 0.7f, 100, "ga_blast_furnace");
+                offerBlasting(GA_FURNACE, RecipeCategory.MISC, ModItems.GALLIUM_INGOT, 0.7f, 100, "ga_blast_furnace");
                 //篝火
                 offerFoodCookingRecipe("campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, CampfireCookingRecipe::new,
-                        600, ModItems.RAW_GA, ModItems.INGOT_GA, 0.35f);
+                        600, ModItems.RAW_GALLIUM, ModItems.GALLIUM_INGOT, 0.35f);
                 offerFoodCookingRecipe("campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, CampfireCookingRecipe::new,
                         600, ModItems.NINE_TURN_INTESTINES, ModItems.COOKED_NINE_TURN_INTESTINES, 0.35f);
                 //烟熏炉
                 offerFoodCookingRecipe("smoking", RecipeSerializer.SMOKING, SmokingRecipe::new,
-                        600, ModItems.RAW_GA, ModItems.INGOT_GA, 0.35f);
+                        600, ModItems.RAW_GALLIUM, ModItems.GALLIUM_INGOT, 0.35f);
                 offerFoodCookingRecipe("smoking", RecipeSerializer.SMOKING, SmokingRecipe::new,
                         100, ModItems.NINE_TURN_INTESTINES, ModItems.COOKED_NINE_TURN_INTESTINES, 0.7f);
                 //有序配方
@@ -82,17 +82,17 @@ public class ModRecipesProvider extends FabricRecipeProvider
                         .pattern("YYY")
                         .pattern("#X#")
                         .pattern("MMM")
-                        .input('Y',ModItems.INGOT_GA)
+                        .input('Y',ModItems.GALLIUM_INGOT)
                         .input('#',Items.REDSTONE)
                         .input('X',ConventionalItemTags.GLASS_BLOCKS)
                         .input('M',Blocks.IRON_BLOCK)
-                        .criterion("has_ingot_ga",conditionsFromItem(ModItems.INGOT_GA))
+                        .criterion("has_ingot_ga",conditionsFromItem(ModItems.GALLIUM_INGOT))
                         .offerTo(exporter,RegistryKey.of(RegistryKeys.RECIPE, getRecipeIdentifier(Identifier.of(FirstFabricMod.MOD_ID, "prospector"))));
                 //无序配方
                 createShapeless(RecipeCategory.MISC, Items.FLINT_AND_STEEL,1)
-                        .input(ModItems.INGOT_GA)
+                        .input(ModItems.GALLIUM_INGOT)
                         .input(Items.IRON_INGOT)
-                        .criterion("has_flint_steel",conditionsFromItem(ModItems.INGOT_GA))
+                        .criterion("has_flint_steel",conditionsFromItem(ModItems.GALLIUM_INGOT))
                         .criterion("has_flint_steel",conditionsFromItem(Items.IRON_INGOT))
                         .offerTo(exporter,RegistryKey.of(RegistryKeys.RECIPE, getRecipeIdentifier(Identifier.of(FirstFabricMod.MOD_ID, "other_flint_and_steel"))));
             }

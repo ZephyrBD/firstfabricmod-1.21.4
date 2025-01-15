@@ -1,15 +1,15 @@
 {
   "values": [
     "firstfabricmod:diamond_furnace",
-    "firstfabricmod:ga_ore_block",
-    "firstfabricmod:deepslate_ga_ore_block",
-    "firstfabricmod:raw_ga_block",
-    "firstfabricmod:ga_block",
-    "firstfabricmod:ga_door",
-    "firstfabricmod:ga_trapdoor",
-    "firstfabricmod:ga_fence",
-    "firstfabricmod:ga_block_slab",
-    "firstfabricmod:ga_pressure_plate",
-    "firstfabricmod:ga_stairs"
+    "firstfabricmod:gallium_ore_block",
+    "firstfabricmod:deepslate_gallium_ore_block",
+    "firstfabricmod:raw_gallium_block",
+    "firstfabricmod:gallium_block",
+    "firstfabricmod:gallium_door",
+    "firstfabricmod:gallium_trapdoor",
+    "firstfabricmod:gallium_fence",
+    "firstfabricmod:gallium_block_slab",
+    "firstfabricmod:gallium_pressure_plate",
+    "firstfabricmod:gallium_stairs"
   ]
 }

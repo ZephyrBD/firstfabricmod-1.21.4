@@ -5,7 +5,7 @@
     "#": "minecraft:redstone",
     "M": "minecraft:iron_block",
     "X": "#c:glass_blocks",
-    "Y": "firstfabricmod:ingot_ga"
+    "Y": "firstfabricmod:gallium_ingot"
   },
   "pattern": [
     "YYY",

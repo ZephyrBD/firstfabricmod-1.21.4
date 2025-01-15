@@ -3,8 +3,8 @@
 	"package": "zbd.firstfabricmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ToolMaterialMixin"
-	],
+      "ArmorItemMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	},

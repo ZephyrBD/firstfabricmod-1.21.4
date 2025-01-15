@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "firstfabricmod:ingot_ga",
+    "firstfabricmod:gallium_ingot",
     "minecraft:iron_ingot"
   ],
   "result": {

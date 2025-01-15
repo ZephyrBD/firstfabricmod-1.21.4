@@ -11,16 +11,16 @@ import java.util.stream.Stream;
 public class ModBlockFamilies {
     private static final Map<Block, BlockFamily> BASE_BLOCKS_TO_FAMILIES = Maps.newHashMap();
 
-    public static final BlockFamily GA = register(ModBlocks.GA_BLOCK)
-            .stairs(ModBlocks.GA_STAIRS)
-            .slab(ModBlocks.GA_BLOCK_SLAB)
-            .button(ModBlocks.GA_BUTTON)
-            .pressurePlate(ModBlocks.GA_PRESSURE_PLATE)
-            .fence(ModBlocks.GA_FENCE)
-            .fenceGate(ModBlocks.GA_FENCE_GATE)
-            .wall(ModBlocks.GA_WALL)
-            .door(ModBlocks.GA_DOOR)
-            .trapdoor(ModBlocks.GA_TRAPDOOR)
+    public static final BlockFamily GA = register(ModBlocks.GALLIUM_BLOCK)
+            .stairs(ModBlocks.GALLIUM_STAIRS)
+            .slab(ModBlocks.GALLIUM_BLOCK_SLAB)
+            .button(ModBlocks.GALLIUM_BUTTON)
+            .pressurePlate(ModBlocks.GALLIUM_PRESSURE_PLATE)
+            .fence(ModBlocks.GALLIUM_FENCE)
+            .fenceGate(ModBlocks.GALLIUM_FENCE_GATE)
+            .wall(ModBlocks.GALLIUM_WALL)
+            .door(ModBlocks.GALLIUM_DOOR)
+            .trapdoor(ModBlocks.GALLIUM_TRAPDOOR)
             .unlockCriterionName("has_ga_ingot")
             .build();
 

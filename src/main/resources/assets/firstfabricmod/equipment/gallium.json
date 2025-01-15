@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "firstfabricmod:gallium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "firstfabricmod:gallium"
+      }
+    ]
+  }
+}

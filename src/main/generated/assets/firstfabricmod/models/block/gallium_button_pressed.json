@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "firstfabricmod:block/gallium_block"
+  }
+}

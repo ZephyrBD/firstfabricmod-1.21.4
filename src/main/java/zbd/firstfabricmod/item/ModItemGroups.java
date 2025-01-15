@@ -28,27 +28,34 @@ public class ModItemGroups {
                         entries.add(ModItems.PROSPECTOR);
                         entries.add(ModBlocks.DIAMOND_FURNACE);
 
-                        entries.add(ModBlocks.GA_ORE_BLOCK);
-                        entries.add(ModBlocks.DEEPSLATE_GA_ORE_BLOCK);
-                        entries.add(ModItems.RAW_GA);
-                        entries.add(ModBlocks.RAW_GA_BLOCK);
-                        entries.add(ModBlocks.GA_BLOCK);
-                        entries.add(ModItems.INGOT_GA);
-                        entries.add(ModBlocks.GA_STAIRS);
-                        entries.add(ModBlocks.GA_BLOCK_SLAB);
-                        entries.add(ModBlocks.GA_BUTTON);
-                        entries.add(ModBlocks.GA_PRESSURE_PLATE);
-                        entries.add(ModBlocks.GA_FENCE);
-                        entries.add(ModBlocks.GA_FENCE_GATE);
-                        entries.add(ModBlocks.GA_WALL);
-                        entries.add(ModBlocks.GA_DOOR);
-                        entries.add(ModBlocks.GA_TRAPDOOR);
+                        entries.add(ModBlocks.GALLIUM_ORE_BLOCK);
+                        entries.add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
+                        entries.add(ModItems.RAW_GALLIUM);
+                        entries.add(ModBlocks.RAW_GALLIUM_BLOCK);
+                        entries.add(ModBlocks.GALLIUM_BLOCK);
+                        entries.add(ModItems.GALLIUM_INGOT);
+                        entries.add(ModBlocks.GALLIUM_STAIRS);
+                        entries.add(ModBlocks.GALLIUM_BLOCK_SLAB);
+                        entries.add(ModBlocks.GALLIUM_BUTTON);
+                        entries.add(ModBlocks.GALLIUM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.GALLIUM_FENCE);
+                        entries.add(ModBlocks.GALLIUM_FENCE_GATE);
+                        entries.add(ModBlocks.GALLIUM_WALL);
+                        entries.add(ModBlocks.GALLIUM_DOOR);
+                        entries.add(ModBlocks.GALLIUM_TRAPDOOR);
 
-                        entries.add(ModItems.GA_SWORD);
-                        entries.add(ModItems.GA_PICKAXE);
-                        entries.add(ModItems.GA_AXE);
-                        entries.add(ModItems.GA_HOE);
-                        entries.add(ModItems.GA_SHOVEL);
+                        entries.add(ModItems.GALLIUM_SWORD);
+                        entries.add(ModItems.GALLIUM_PICKAXE);
+                        entries.add(ModItems.GALLIUM_AXE);
+                        entries.add(ModItems.GALLIUM_HOE);
+                        entries.add(ModItems.GALLIUM_SHOVEL);
+
+                        entries.add(ModItems.GALLIUM_HELMET);
+                        entries.add(ModItems.GALLIUM_CHESTPLATE);
+                        entries.add(ModItems.GALLIUM_LEGGINGS);
+                        entries.add(ModItems.GALLIUM_BOOTS);
+
+                        entries.add(ModItems.STRAWBERRY);
                     }).build());
     public static void initialize()
     {

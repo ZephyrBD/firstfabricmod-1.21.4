@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "firstfabricmod:block/ga_block",
-    "side": "firstfabricmod:block/ga_block",
-    "top": "firstfabricmod:block/ga_block"
-  }
-}
