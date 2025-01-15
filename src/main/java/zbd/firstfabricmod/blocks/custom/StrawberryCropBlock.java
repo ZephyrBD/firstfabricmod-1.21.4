@@ -24,6 +24,7 @@ public class StrawberryCropBlock extends CropBlock {
         return MAX_AGE;
     }
 
+
     protected IntProperty getAgeProperty() {
         return AGE;
     }
