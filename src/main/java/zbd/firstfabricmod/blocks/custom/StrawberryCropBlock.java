@@ -30,7 +30,7 @@ public class StrawberryCropBlock extends CropBlock {
 
     @Override
     public int getAge(BlockState state) {
-        return (Integer)state.get(this.getAgeProperty());
+        return state.get(this.getAgeProperty());
     }
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

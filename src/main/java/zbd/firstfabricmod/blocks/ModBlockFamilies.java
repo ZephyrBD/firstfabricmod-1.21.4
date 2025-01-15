@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class ModBlockFamilies {
     private static final Map<Block, BlockFamily> BASE_BLOCKS_TO_FAMILIES = Maps.newHashMap();
 
-    public static final BlockFamily GA = register(ModBlocks.GALLIUM_BLOCK)
+    public static final BlockFamily GALLIUM = register(ModBlocks.GALLIUM_BLOCK)
             .stairs(ModBlocks.GALLIUM_STAIRS)
             .slab(ModBlocks.GALLIUM_BLOCK_SLAB)
             .button(ModBlocks.GALLIUM_BUTTON)
